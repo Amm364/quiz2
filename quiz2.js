@@ -6,10 +6,37 @@
 //  - finally, write a function that makes you happy :D (as in, have some fun a write something cool, it's up to you!)
 
 (function($){
-	$('.links li a').on('click', function(e) {
-		e.preventDefault()
-		alrt('you clicked a link, good for you');
+	$('a').click(function(e) {
+		e.preventDefault();
+		alert('you clicked a link, good for you');
 	});
 
-	console.log("this is a message for you!!!")
-})(jQery);
+	console.log("this is a message for you!!!");
+})(jQuery);
+
+function goodbye(){
+  document.getElementById("div").style.display = "none";
+  document.getElementById("goodbye").style.display = "block";
+}
+function happy(){
+  document.getElementById("hiddenText").style.display = "block";
+}
+function changeColor(){
+  var list=["red","blue","green"];
+  var index=0;
+  for (var i=1;i<4;i++){
+    var id="list"+i;
+    document.getElementById(id).style.color = list[index];
+    index++;
+  }
+}
+
+function showAccordion(){ //For some reason, you have to hit the button twice to show the text for some reason, but after that, it works each time you click it once.
+  var status=document.getElementById("accordionText").style.display;
+  if (status==="none"){
+    document.getElementById("accordionText").style.display="block"
+  }
+  else{
+    document.getElementById("accordionText").style.display="none"
+  }
+}
