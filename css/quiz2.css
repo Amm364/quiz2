@@ -43,12 +43,6 @@ ul{
   color: darkblue;
 }
 
-.accordion{
-  background-color: lightgreen;
-  color: black;
-  text-align: left;
-}
-
 .accordion-text{
     display: none;
 }
